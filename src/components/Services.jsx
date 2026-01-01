@@ -3,6 +3,7 @@ import { motion } from 'framer-motion';
 import { Sparkles, MessageSquare, Presentation, Image as ImageIcon, Code, Zap } from 'lucide-react';
 import customDevImg from '../assets/generated/custom_dev.png';
 import aiStoreIconsImg from '../assets/generated/ai_store_icons.png';
+import techPatternImg from '../assets/generated/tech_pattern.png';
 
 const Services = () => {
   const aiStoreItems = [
@@ -56,6 +57,9 @@ const Services = () => {
   return (
     <section id="services" className="section services">
       <style>{`
+        .services::before {
+          background-image: url(${techPatternImg}) !important;
+        }
         .custom-dev-card::after {
           background-image: linear-gradient(to right, var(--color-navy-900), transparent), url(${customDevImg}) !important;
           background-size: cover;
