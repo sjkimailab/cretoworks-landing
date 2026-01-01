@@ -1,5 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
+import heroVisualImg from '../assets/generated/hero_visual.png';
 import './Hero.css';
 
 const Hero = () => {
@@ -33,7 +34,7 @@ const Hero = () => {
         >
           <div className="hero-image-wrapper">
             <img
-              src="./assets/hero_visual.png"
+              src={heroVisualImg}
               alt="AI Technology Visual"
               className="hero-main-image"
             />

@@ -1,7 +1,8 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { Sparkles, MessageSquare, Presentation, Image as ImageIcon, Code, Zap } from 'lucide-react';
-import './Services.css';
+import customDevImg from '../assets/generated/custom_dev.png';
+import aiStoreIconsImg from '../assets/generated/ai_store_icons.png';
 
 const Services = () => {
   const aiStoreItems = [
@@ -10,6 +11,7 @@ const Services = () => {
       price: "월 2.9만~",
       description: "다양한 헤어스타일을 미리 체험하고 어울리는 스타일을 찾아보세요.",
       iconClass: "icon-1",
+      bgPos: "0% 0%",
       tag: "AI Store"
     },
     {
@@ -17,6 +19,7 @@ const Services = () => {
       price: "월 9.9만~",
       description: "고객 응대부터 내부 업무 보조까지, 맞춤형 AI 상담사를 구축하세요.",
       iconClass: "icon-2",
+      bgPos: "100% 0%",
       tag: "AI Store"
     },
     {
@@ -24,6 +27,7 @@ const Services = () => {
       price: "1회 1.9만~",
       description: "주제만 입력하면 전문적인 디자인의 PPT를 즉시 생성해 드립니다.",
       iconClass: "icon-3",
+      bgPos: "0% 100%",
       tag: "AI Store"
     },
     {
@@ -31,6 +35,7 @@ const Services = () => {
       price: "월 4.9만~",
       description: "고품질의 커스텀 이미지를 생성하여 마케팅 자료 등에 활용하세요.",
       iconClass: "icon-4",
+      bgPos: "100% 100%",
       tag: "AI Store"
     }
   ];
@@ -50,6 +55,13 @@ const Services = () => {
 
   return (
     <section id="services" className="section services">
+      <style>{`
+        .custom-dev-card::after {
+          background-image: linear-gradient(to right, var(--color-navy-900), transparent), url(${customDevImg}) !important;
+          background-size: cover;
+          background-position: center;
+        }
+      `}</style>
       <div className="container">
         <div className="section-header">
           <span className="badge">Service Overview</span>
@@ -57,7 +69,6 @@ const Services = () => {
           <p>자사 서비스에 맞춤 API를 접목하고 업무 생산성을 극대화하세요.</p>
         </div>
 
-        {/* Custom Dev Section */}
         <div className="custom-dev-grid">
           {customServices.map((service, idx) => (
             <motion.div
@@ -87,7 +98,6 @@ const Services = () => {
           ))}
         </div>
 
-        {/* AI Store Section */}
         <div className="section-header mt-lg">
           <span className="badge blue">AI Store</span>
           <h2>AI 스토어 & 맞춤 AI 개발</h2>
@@ -105,7 +115,13 @@ const Services = () => {
               whileHover={{ y: -5 }}
             >
               <div className="card-badge">{item.tag}</div>
-              <div className={`image-icon ${item.iconClass}`}></div>
+              <div
+                className={`image-icon`}
+                style={{
+                  backgroundImage: `url(${aiStoreIconsImg})`,
+                  backgroundPosition: item.bgPos
+                }}
+              ></div>
               <div className="card-content">
                 <h3>{item.title}</h3>
                 <span className="price">{item.price}</span>
@@ -119,7 +135,6 @@ const Services = () => {
           ))}
         </div>
 
-        {/* Consultancy Section */}
         <div className="consultancy-box">
           <div className="consultancy-content">
             <span className="badge">기술 컨설팅 & 강의</span>
