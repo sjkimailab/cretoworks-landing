@@ -2,6 +2,7 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import './ContactCTA.css';
 import { useTranslation } from 'react-i18next';
+import logoIcon from '../assets/logo-icon.svg';
 
 const ContactCTA = () => {
   const { t } = useTranslation();
@@ -14,6 +15,9 @@ const ContactCTA = () => {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
         >
+          <div className="cta-logo">
+            <img src={logoIcon} alt="CretoWorks" />
+          </div>
           <h2>{t('contact.title')}</h2>
           <p>{t('contact.description')}</p>
           <div className="cta-btns">
