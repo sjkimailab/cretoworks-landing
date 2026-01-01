@@ -5,16 +5,19 @@ Use these values to set up your Figma Styles and Variable collections.
 ## Color Styles
 | Name | Hex / Value | Description |
 | :--- | :--- | :--- |
-| **Navy** | `#0a192f` | Primary dark background / text color |
-| **Navy Light** | `#172a45` | Secondary background / hover states |
-| **White** | `#ffffff` | Primary light background / text color |
-| **Glass BG** | `rgba(255, 255, 255, 0.1)` | For glassmorphism effects |
-| **Glass Border** | `rgba(255, 255, 255, 0.2)` | For glassmorphism borders |
-| **Glass Text** | `#ffffff` | Text on glass cards |
+| **Navy** | `#0F172A` | Primary dark background / text color |
+| **Navy Dark** | `#020617` | Deepest background color |
+| **Navy Light** | `#1E293B` | Secondary background / hover states |
+| **Primary** | `#3B82F6` | Main brand color (Blue) |
+| **Secondary** | `#64748B` | Muted text and secondary elements |
+| **Accent** | `#60A5FA` | Light blue accents |
+| **White** | `#FFFFFF` | Background and high-contrast text |
 
 ### Gradients
-- **Main Gradient**: `linear-gradient(135deg, #0a192f 0%, #172a45 100%)`
-- **Accent Gradient**: `linear-gradient(90deg, #007aff 0%, #00c6ff 100%)`
+- **Main Gradient**: `linear-gradient(135deg, #0F172A 0%, #020617 100%)`
+- **Primary Gradient**: `linear-gradient(90deg, #3B82F6 0%, #60A5FA 100%)`
+- **Surface Gradient**: `linear-gradient(180deg, #FFFFFF 0%, #F1F5F9 100%)`
+
 
 ## Typography Styles
 - **Font Family**: `Pretendard`, `-apple-system`, `BlinkMacSystemFont`, `system-ui`, `sans-serif` (Download [Pretendard](https://github.com/orioncactus/pretendard) if not installed)
