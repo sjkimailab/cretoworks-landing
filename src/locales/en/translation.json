@@ -1,8 +1,6 @@
 {
     "header": {
         "service": "Services",
-        "aiStore": "AI Store",
-        "customAi": "Custom AI",
         "team": "Team",
         "blog": "Blog",
         "contact": "Contact Us"
@@ -27,34 +25,6 @@
             "industryValue": "Startup, Public/Education, Manufacturing/Logistics, Commerce/Retail, Others",
             "budgetValue": "Under $10k ~ Over $70k",
             "purposeValue": "Prototype, MVP, Renewal, Advanced Development",
-            "btnContact": "Contact Us"
-        },
-        "aiStore": {
-            "badge": "AI Store",
-            "title": "AI Store & Custom AI Development",
-            "items": {
-                "hair": {
-                    "title": "Hairstyle Generator",
-                    "price": "$29/mo~",
-                    "desc": "Try various hairstyles in advance and find your personal style."
-                },
-                "chat": {
-                    "title": "GPT Chatbot",
-                    "price": "$99/mo~",
-                    "desc": "From customer service to internal task automation, we build smart AI partners for you."
-                },
-                "ppt": {
-                    "title": "PPT Generator",
-                    "price": "$19/once~",
-                    "desc": "Just enter a topic and instantly generate a professional PPT with sensible design."
-                },
-                "image": {
-                    "title": "Image Generator",
-                    "price": "$49/mo~",
-                    "desc": "Freely create high-quality custom images ready for marketing use."
-                }
-            },
-            "btnDemo": "View Demo",
             "btnContact": "Contact Us"
         },
         "consultancy": {
@@ -113,11 +83,11 @@
         "items": [
             {
                 "question": "What are the costs for AI implementation?",
-                "answer": "It depends on the complexity and model requirements. CretoWorks offers optimized plans tailored to your budget, from low-cost AI Store solutions for small businesses to enterprise-grade custom development."
+                "answer": "It depends on the complexity and model requirements. CretoWorks offers optimized plans tailored to your budget, from low-cost AI solutions to enterprise-grade custom development."
             },
             {
                 "question": "How long does it take to build a service?",
-                "answer": "Off-the-shelf solutions from AI Store can be introduced immediately, while custom AI projects typically take 4 to 12 weeks. We provide a detailed roadmap during the initial consultation."
+                "answer": "Off-the-shelf solutions can be introduced immediately, while custom AI projects typically take 4 to 12 weeks. We provide a detailed roadmap during the initial consultation."
             },
             {
                 "question": "Can I use it without technical knowledge?",

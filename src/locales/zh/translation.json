@@ -1,88 +1,58 @@
 {
     "header": {
         "service": "服务",
-        "aiStore": "AI商店",
-        "customAi": "定制AI",
         "team": "团队",
         "blog": "博客",
         "contact": "联系我们"
     },
     "hero": {
-        "title1": "从定制AI到网页·应用制作，",
-        "title2": "教育·招聘，与CretoWorks一站式完成",
-        "description": "不仅是提供解决方案，我们更是您的最佳技术合作伙伴，助力您的业务成为AI时代的引领者。",
+        "title1": "从定制化 AI 到网页·APP 制作，",
+        "title2": "教育·招聘，在 CretoWorks 一站式完成",
+        "description": "不仅仅是提供解决方案，更是为了让您的业务成为 AI 时代的领导者，成为最理想的技术合作伙伴。",
         "btnContact": "联系我们",
         "btnCases": "查看成功案例"
     },
     "services": {
-        "badge": "服务概览",
-        "title": "我们独特的AI解决方案",
-        "description": "通过优化业务的定制API集成，最大限度地提高工作生产力并创造新价值。",
+        "badge": "Service Overview",
+        "title": "我们独特的 AI 解决方案",
+        "description": "通过引入为业务优化的定制化 API，最大化业务生产力，创造新的价值。",
         "customDev": {
-            "title": "定制网页、应用制作",
-            "desc": "请告知您期望的行业、目的和预算，我们将快速为您提供方案。",
+            "title": "定制化网页、APP 制作",
+            "desc": "请提供您想要的行业、目的、预算进行咨询，我们将快速为您提供方案。",
             "industry": "行业",
             "budget": "预算",
             "purpose": "目的",
             "industryValue": "初创企业、公共/教育、制造/物流、电商/零售、其他",
-            "budgetValue": "1000万韩元以下 ~ 7000万韩元以上",
-            "purposeValue": "原型、MVP、更新、高级开发",
-            "btnContact": "联系我们"
-        },
-        "aiStore": {
-            "badge": "AI Store",
-            "title": "AI商店 & 定制AI开发",
-            "items": {
-                "hair": {
-                    "title": "发型生成器",
-                    "price": "每月 2.9万~",
-                    "desc": "预先体验适合的发型，\n寻找您的专属风格。"
-                },
-                "chat": {
-                    "title": "GPT聊天机器人",
-                    "price": "每月 9.9万~",
-                    "desc": "从客户服务到企业内部办公自动化，\n我们为您构建智能AI助手。"
-                },
-                "ppt": {
-                    "title": "PPT生成器",
-                    "price": "单次 1.9万~",
-                    "desc": "只需输入主题，即可立即生成\n具有专业结构和感性设计的PPT。"
-                },
-                "image": {
-                    "title": "图像生成器",
-                    "price": "每月 4.9万~",
-                    "desc": "自由生成可直接用于市场营销的高质量\n定制图像。"
-                }
-            },
-            "btnDemo": "查看演示",
+            "budgetValue": "1千万韩元以下 ~ 7千万韩元以上",
+            "purposeValue": "原型、MVP、重构、高级开发",
             "btnContact": "联系我们"
         },
         "consultancy": {
             "badge": "技术咨询 & 讲座",
-            "title": "AI·网页·应用·软件咨询 / 定制AI讲座",
+            "title": "AI·网页·APP·软件咨询 / 定制化 AI 讲座",
             "tags": [
                 "Vibe Coding",
                 "深度学习基础",
-                "视觉DL",
+                "视觉 DL",
                 "NLP·RAG"
             ],
             "btnMore": "查看更多"
         }
     },
     "philosophy": {
-        "label": "AI·IT全方位解决方案",
-        "sublabel": "从创意到服务运营，我们将成为您负责全过程的坚实伙伴。",
+        "label": "AI·IT Total Solution",
+        "sublabel": "从创意到服务运营，我们是负责全过程的可靠合作伙伴。",
         "features": [
-            "通过精确分析业务目标，设计引领市场潮流的定制AI解决方案。",
-            "从策划到设计、开发、发布的一站式处理，提高项目的完整度。",
+            "通过精确分析业务目标，设计引领市场潮流的定制化 AI 解决方案。",
+            "通过一站式处理从策划到设计、开发、部署的全过程，提高项目的完成度。",
             "同时考虑最新趋势和技术稳定性，支持构建可持续的商业模式。"
         ],
         "badge": "公司特点"
     },
     "process": {
-        "badge": "我们的流程",
-        "title": "系统化的引入程序",
-        "description": "从创意到实际服务运营，CretoWorks与您同在。",
+        "badge": "Our Process",
+        "title": "系统化的导入流程",
+        "description": "从创意到实际的服务运营，CretoWorks 与您同行。",
         "steps": [
             {
                 "num": "01",
@@ -91,52 +61,52 @@
             },
             {
                 "num": "02",
-                "title": "定制架构设计",
-                "desc": "根据分析的数据，设计可扩展的最佳AI系统。"
+                "title": "定制化架构设计",
+                "desc": "根据分析的数据，设计可扩展的最优 AI 系统。"
             },
             {
                 "num": "03",
                 "title": "敏捷开发及验证",
-                "desc": "通过快速开发和严格的质量测试，提高服务的完整度。"
+                "desc": "通过快速开发和彻底的质量测试，提高服务的完成度。"
             },
             {
                 "num": "04",
-                "title": "发布及持续优化",
-                "desc": "在稳定发布后也持续分析实际使用数据，优化性能。"
+                "title": "部署及持续优化",
+                "desc": "在稳定部署后，仍会分析实际使用数据，持续优化性能。"
             }
         ]
     },
     "faq": {
         "badge": "Q&A",
         "title": "常见问题",
-        "description": "整理了关于CretoWorks和引入AI的常见疑问。",
+        "description": "整理了关于 CretoWorks 和 AI 导入的常见疑问。",
         "items": [
             {
-                "question": "引入AI的费用大概是多少？",
-                "answer": "取决于项目的复杂度和模型要求。CretoWorks提供从面向个体的低成本AI商店方案到企业级定制开发等多种符合预算的优化方案。"
+                "question": "AI 导入时的费用大概是多少？",
+                "answer": "取决于项目的复杂程度和模型需求。CretoWorks 提供从低成本 AI 解决方案到企业级定制化开发的最优方案，以适应客户的预算情况。"
             },
             {
-                "question": "服务构建周期需要多久？",
-                "answer": "AI商店的现有方案可以立即引入，定制AI项目通常需要4到12周。我们将在初步咨询阶段提供详细的路线图。"
+                "question": "服务构建需要多长时间？",
+                "answer": "成品解决方案可以立即导入，定制化 AI 项目通常需要 4 到 12 周。我们会在初始咨询阶段提供详细的路线图。"
             },
             {
                 "question": "没有技术知识也可以使用吗？",
-                "answer": "当然可以。CretoWorks负责从策划到开发、实际运营的所有技术过程。我们提供紧密的技术咨询，让您只需专注于业务创意和应用方案。"
+                "answer": "当然。CretoWorks 负责从策划到开发、实际运营的所有技术过程。我们提供紧密的技术咨询，让您只需专注于业务创意和应用方案。"
             },
             {
                 "question": "售后管理和维护如何进行？",
-                "answer": "专业团队将进行实时监控以确保系统稳定。此外，我们将紧跟快速发展的AI技术趋势，承诺定期进行模型优化和安全更新。"
+                "answer": "专职团队会进行实时监控，确保服务稳定维持。此外，我们会紧跟快速发展的 AI 技术趋势，承诺定期进行模型优化和安全更新。"
             }
         ]
     },
     "contact": {
-        "title": "新业务的开始，\n立即体验AI转型",
-        "description": "CretoWorks专家将亲自参与成长思考，\n并用实际成果为您证明。",
+        "title": "新业务的开始，\n现在就体验 AI 转型",
+        "description": "CretoWorks 的专家将亲自为成长烦恼，\n用实际成果证明。",
         "btnContact": "联系我们",
-        "btnIntro": "下载介绍书"
+        "btnIntro": "下载介绍资料"
     },
     "footer": {
-        "desc": "业务定制型人工智能解决方案合作伙伴\nAI for Everyone.",
+        "desc": "业务定制化人工智能解决方案合作伙伴\nAI for Everyone.",
         "service": "服务",
         "company": "公司",
         "support": "支持",

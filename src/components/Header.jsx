@@ -25,8 +25,6 @@ const Header = () => {
         <nav className="nav">
           <ul className="nav-list">
             <li><a href="#services">{t('header.service')}</a></li>
-            <li><a href="#services">{t('header.aiStore')}</a></li>
-            <li><a href="#services">{t('header.customAi')}</a></li>
             <li><a href="#team">{t('header.team')}</a></li>
             <li><a href="#blog">{t('header.blog')}</a></li>
             <li><a href="#contact">{t('header.contact')}</a></li>

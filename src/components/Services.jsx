@@ -5,41 +5,6 @@ import { useTranslation } from 'react-i18next';
 
 const Services = () => {
   const { t } = useTranslation();
-  const aiStoreItems = [
-    {
-      title: t('services.aiStore.items.hair.title'),
-      price: t('services.aiStore.items.hair.price'),
-      description: t('services.aiStore.items.hair.desc'),
-      iconClass: "icon-1",
-      bgPos: "0% 0%",
-      tag: t('services.aiStore.badge')
-    },
-    {
-      title: t('services.aiStore.items.chat.title'),
-      price: t('services.aiStore.items.chat.price'),
-      description: t('services.aiStore.items.chat.desc'),
-      iconClass: "icon-2",
-      bgPos: "100% 0%",
-      tag: t('services.aiStore.badge')
-    },
-    {
-      title: t('services.aiStore.items.ppt.title'),
-      price: t('services.aiStore.items.ppt.price'),
-      description: t('services.aiStore.items.ppt.desc'),
-      iconClass: "icon-3",
-      bgPos: "0% 100%",
-      tag: t('services.aiStore.badge')
-    },
-    {
-      title: t('services.aiStore.items.image.title'),
-      price: t('services.aiStore.items.image.price'),
-      description: t('services.aiStore.items.image.desc'),
-      iconClass: "icon-4",
-      bgPos: "100% 100%",
-      tag: t('services.aiStore.badge')
-    }
-  ];
-
   const customServices = [
     {
       title: t('services.customDev.title'),
@@ -97,43 +62,6 @@ const Services = () => {
                 ))}
               </div>
               <button className="btn btn-primary" style={{ width: 'fit-content' }}>{t('services.customDev.btnContact')}</button>
-            </motion.div>
-          ))}
-        </div>
-
-        <div className="section-header mt-lg">
-          <span className="badge blue">{t('services.aiStore.badge')}</span>
-          <h2>{t('services.aiStore.title')}</h2>
-        </div>
-
-        <div className="bento-grid">
-          {aiStoreItems.map((item, index) => (
-            <motion.div
-              key={index}
-              className={`bento-card`}
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ delay: index * 0.1 }}
-              viewport={{ once: true }}
-              whileHover={{ y: -5 }}
-            >
-              <div className="card-badge">{item.tag}</div>
-              <div
-                className={`image-icon`}
-                style={{
-                  backgroundImage: `url(${aiStoreIconsImg})`,
-                  backgroundPosition: item.bgPos
-                }}
-              ></div>
-              <div className="card-content">
-                <h3>{item.title}</h3>
-                <span className="price">{item.price}</span>
-                <p>{item.description}</p>
-              </div>
-              <div className="card-footer">
-                <button className="btn-text">{t('services.aiStore.btnDemo')}</button>
-                <button className="btn-text">{t('services.aiStore.btnContact')}</button>
-              </div>
             </motion.div>
           ))}
         </div>

@@ -18,8 +18,7 @@ const Footer = () => {
           <div className="footer-column">
             <h4>{t('footer.service')}</h4>
             <ul>
-              <li><a href="#services">{t('header.aiStore')}</a></li>
-              <li><a href="#services">{t('header.customAi')}</a></li>
+              <li><a href="#services">{t('header.service')}</a></li>
               <li><a href="#services">{t('services.consultancy.badge')}</a></li>
             </ul>
           </div>
