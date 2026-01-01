@@ -26,7 +26,7 @@ const CaseStudies = () => {
       <div className="container">
         <div className="section-header">
           <h2 className="section-title">고객사 사례</h2>
-          <p className="section-subtitle">다양한 산업 분야에서 입증된 Creto Works의 인공지능 솔루션</p>
+          <p className="section-subtitle">다양한 산업 분야에서 입증된 CretoWorks의 인공지능 솔루션</p>
         </div>
 
         <div className="cases-grid">

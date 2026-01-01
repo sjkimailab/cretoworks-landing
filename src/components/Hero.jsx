@@ -15,7 +15,7 @@ const Hero = () => {
         >
           <h1>
             맞춤형 AI부터 웹·앱 제작,
-            <span className="accent-text">교육·채용까지 cretoworks와 한 번에</span>
+            <span className="accent-text">교육·채용까지 CretoWorks와 한 번에</span>
           </h1>
           <p>
             단순한 솔루션 제공을 넘어, 당신의 비즈니스가 AI 시대의 리더가 될 수 있도록 최적의 기술 파트너가 되어드립니다.
