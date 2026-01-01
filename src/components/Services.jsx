@@ -1,3 +1,6 @@
+import React from 'react';
+import { motion } from 'framer-motion';
+import { Code } from 'lucide-react';
 import customDevImg from '../assets/generated/custom_dev.png';
 import aiStoreIconsImg from '../assets/generated/ai_store_icons.png';
 import techPatternImg from '../assets/generated/tech_pattern.png';

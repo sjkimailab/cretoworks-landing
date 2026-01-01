@@ -12,6 +12,9 @@
         "btnContact": "Contact Us",
         "btnCases": "View Success Stories"
     },
+    "partners": {
+        "title": "Trusted by industry leaders"
+    },
     "services": {
         "badge": "Service Overview",
         "title": "Our Special AI Solutions",
@@ -38,6 +41,28 @@
             ],
             "btnMore": "View More"
         }
+    },
+    "cases": {
+        "title": "Customer Stories",
+        "description": "Proven AI solutions by CretoWorks across various industries",
+        "btnMore": "More",
+        "items": [
+            {
+                "title": "AI Hair Experience Solution",
+                "description": "Increased visit booking rate by 40% by recommending optimized hairstyles in real-time.",
+                "tag": "AI Solution"
+            },
+            {
+                "title": "Custom GPT Consultation Chatbot",
+                "description": "Reduced agent workload by 60% and improved satisfaction through 24/7 automation.",
+                "tag": "GPT Solution"
+            },
+            {
+                "title": "Automated PPT Generation Engine",
+                "description": "Reduced content creation time by 80% by instantly generating PPTs from educational content.",
+                "tag": "Automation"
+            }
+        ]
     },
     "philosophy": {
         "label": "AI·IT Total Solution",
@@ -83,11 +108,11 @@
         "items": [
             {
                 "question": "What are the costs for AI implementation?",
-                "answer": "It depends on the complexity and model requirements. CretoWorks offers optimized plans tailored to your budget, from low-cost AI solutions to enterprise-grade custom development."
+                "answer": "It depends on the complexity and model requirements. CretoWorks offers optimized plans tailored to your budget, up to enterprise-grade custom development."
             },
             {
                 "question": "How long does it take to build a service?",
-                "answer": "Off-the-shelf solutions can be introduced immediately, while custom AI projects typically take 4 to 12 weeks. We provide a detailed roadmap during the initial consultation."
+                "answer": "Custom AI projects typically take 4 to 12 weeks. We provide a detailed roadmap during the initial consultation."
             },
             {
                 "question": "Can I use it without technical knowledge?",
