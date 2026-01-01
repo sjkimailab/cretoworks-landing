@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import { useTranslation } from 'react-i18next';
 import { Mail, Phone, MapPin, Send, CheckCircle } from 'lucide-react';
+import { supabase } from '../lib/supabase';
 
 const Contact = () => {
     const { t } = useTranslation();
@@ -14,6 +15,7 @@ const Contact = () => {
     });
     const [isSubmitted, setIsSubmitted] = useState(false);
     const [isSubmitting, setIsSubmitting] = useState(false);
+    const [error, setError] = useState('');
 
     const handleChange = (e) => {
         setFormState({ ...formState, [e.target.name]: e.target.value });
@@ -22,10 +24,38 @@ const Contact = () => {
     const handleSubmit = async (e) => {
         e.preventDefault();
         setIsSubmitting(true);
-        // Simulate API call
-        await new Promise(resolve => setTimeout(resolve, 1500));
-        setIsSubmitting(false);
-        setIsSubmitted(true);
+        setError('');
+
+        try {
+            // Save to Supabase
+            const { error: supabaseError } = await supabase
+                .from('inquiries')
+                .insert([
+                    {
+                        name: formState.name,
+                        email: formState.email,
+                        subject: formState.subject,
+                        message: formState.message,
+                        status: 'pending'
+                    }
+                ]);
+
+            if (supabaseError) throw supabaseError;
+
+            setIsSubmitted(true);
+            setFormState({
+                name: '',
+                email: '',
+                company: '',
+                subject: '',
+                message: ''
+            });
+        } catch (error) {
+            console.error('Error submitting form:', error);
+            setError('문의 전송에 실패했습니다. 다시 시도해주세요.');
+        } finally {
+            setIsSubmitting(false);
+        }
     };
 
     if (isSubmitted) {

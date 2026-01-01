@@ -27,3 +27,6 @@ dist-ssr
 .netlify
 .gemini
 
+# Environment variables
+.env.local
+.env
