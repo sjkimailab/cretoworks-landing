@@ -141,7 +141,8 @@
     "cookie": {
         "title": "Cookie and Privacy Policy",
         "description": "CretoWorks uses cookies to provide you with the best experience. By continuing to use our site, you agree to our use of cookies.",
-        "btnAccept": "Accept and Close",
+        "btnAccept": "Accept",
+        "btnReject": "Reject",
         "linkPrivacy": "Privacy Policy"
     },
     "privacy": {

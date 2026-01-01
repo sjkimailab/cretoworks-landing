@@ -19,7 +19,12 @@ const CookieConsent = ({ onPrivacyClick }) => {
     }, []);
 
     const handleAccept = () => {
-        localStorage.setItem('cookie-consent', 'true');
+        localStorage.setItem('cookie-consent', 'accepted');
+        setIsVisible(false);
+    };
+
+    const handleReject = () => {
+        localStorage.setItem('cookie-consent', 'rejected');
         setIsVisible(false);
     };
 
@@ -39,7 +44,7 @@ const CookieConsent = ({ onPrivacyClick }) => {
                                 <Cookie size={20} className="cookie-icon" />
                             </div>
                             <h3>{t('cookie.title')}</h3>
-                            <button className="close-btn" onClick={() => setIsVisible(false)}>
+                            <button className="close-btn" onClick={handleReject}>
                                 <X size={18} />
                             </button>
                         </div>
@@ -47,6 +52,9 @@ const CookieConsent = ({ onPrivacyClick }) => {
                         <div className="cookie-actions">
                             <button className="cookie-privacy-btn" onClick={onPrivacyClick}>
                                 {t('cookie.linkPrivacy')}
+                            </button>
+                            <button className="cookie-privacy-btn" onClick={handleReject}>
+                                {t('cookie.btnReject')}
                             </button>
                             <button className="btn btn-primary btn-sm" onClick={handleAccept}>
                                 {t('cookie.btnAccept')}

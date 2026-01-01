@@ -2,7 +2,7 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import './ContactCTA.css';
 import { useTranslation } from 'react-i18next';
-import logoIcon from '../assets/logo-icon.svg';
+import Logo3D from './Logo3D';
 
 const ContactCTA = () => {
   const { t } = useTranslation();
@@ -16,7 +16,7 @@ const ContactCTA = () => {
           viewport={{ once: true }}
         >
           <div className="cta-logo">
-            <img src={logoIcon} alt="CretoWorks" />
+            <Logo3D />
           </div>
           <h2>{t('contact.title')}</h2>
           <p>{t('contact.description')}</p>

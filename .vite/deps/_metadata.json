@@ -1,0 +1,97 @@
+{
+  "hash": "76def6c7",
+  "configHash": "77852c73",
+  "lockfileHash": "80a16309",
+  "browserHash": "aac2e3d9",
+  "optimized": {
+    "framer-motion": {
+      "src": "../../node_modules/framer-motion/dist/es/index.mjs",
+      "file": "framer-motion.js",
+      "fileHash": "aa635ebe",
+      "needsInterop": false
+    },
+    "i18next": {
+      "src": "../../node_modules/i18next/dist/esm/i18next.js",
+      "file": "i18next.js",
+      "fileHash": "96cbb591",
+      "needsInterop": false
+    },
+    "i18next-browser-languagedetector": {
+      "src": "../../node_modules/i18next-browser-languagedetector/dist/esm/i18nextBrowserLanguageDetector.js",
+      "file": "i18next-browser-languagedetector.js",
+      "fileHash": "c4efee4a",
+      "needsInterop": false
+    },
+    "lucide-react": {
+      "src": "../../node_modules/lucide-react/dist/esm/lucide-react.js",
+      "file": "lucide-react.js",
+      "fileHash": "5159ce6e",
+      "needsInterop": false
+    },
+    "react": {
+      "src": "../../node_modules/react/index.js",
+      "file": "react.js",
+      "fileHash": "705467d6",
+      "needsInterop": true
+    },
+    "react-dom/client": {
+      "src": "../../node_modules/react-dom/client.js",
+      "file": "react-dom_client.js",
+      "fileHash": "1b443b50",
+      "needsInterop": true
+    },
+    "react-i18next": {
+      "src": "../../node_modules/react-i18next/dist/es/index.js",
+      "file": "react-i18next.js",
+      "fileHash": "bb982464",
+      "needsInterop": false
+    },
+    "@react-three/fiber": {
+      "src": "../../node_modules/@react-three/fiber/dist/react-three-fiber.esm.js",
+      "file": "@react-three_fiber.js",
+      "fileHash": "b50cf5aa",
+      "needsInterop": false
+    },
+    "@react-three/drei": {
+      "src": "../../node_modules/@react-three/drei/index.js",
+      "file": "@react-three_drei.js",
+      "fileHash": "4cfe1b35",
+      "needsInterop": false
+    }
+  },
+  "chunks": {
+    "hls-AE33N3ZI": {
+      "file": "hls-AE33N3ZI.js"
+    },
+    "vision_bundle-EJYKSMNM": {
+      "file": "vision_bundle-EJYKSMNM.js"
+    },
+    "chunk-MYHIP5LU": {
+      "file": "chunk-MYHIP5LU.js"
+    },
+    "chunk-WDZQFB2O": {
+      "file": "chunk-WDZQFB2O.js"
+    },
+    "chunk-6L7EWIG4": {
+      "file": "chunk-6L7EWIG4.js"
+    },
+    "chunk-WFAZTOFY": {
+      "file": "chunk-WFAZTOFY.js"
+    },
+    "chunk-Y7AWLA4Y": {
+      "file": "chunk-Y7AWLA4Y.js"
+    },
+    "chunk-QM5EC3HX": {
+      "file": "chunk-QM5EC3HX.js"
+    },
+    "chunk-Q76T3GGX": {
+      "file": "chunk-Q76T3GGX.js"
+    },
+    "chunk-YKHBUGD6": {
+      "file": "chunk-YKHBUGD6.js"
+    },
+    "chunk-DC5AMYBS": {
+      "file": "chunk-DC5AMYBS.js"
+    }
+  }
+}
