@@ -137,5 +137,10 @@
         "businessNumber": "工商注册号: 549-87-03589",
         "address": "地址: 釜山广域市莲堤区土谷南路3, 458号 CretoWorks",
         "representative": "代表人: 梁瑞娟"
+    },
+    "cookie": {
+        "title": "Cookie 和隐私政策",
+        "description": "CretoWorks 使用 Cookie 以提供更好的服务。继续使用我们的网站即表示您同意我们使用 Cookie。",
+        "btnAccept": "同意并关闭"
     }
 }

@@ -7,6 +7,7 @@ import CaseStudies from './components/CaseStudies';
 import Process from './components/Process';
 import FAQ from './components/FAQ';
 import ContactCTA from './components/ContactCTA';
+import CookieConsent from './components/CookieConsent';
 import './index.css';
 
 class ErrorBoundary extends Component {
@@ -47,6 +48,7 @@ function App() {
           <FAQ />
           <ContactCTA />
         </Layout>
+        <CookieConsent />
       </Suspense>
     </ErrorBoundary>
   );
