@@ -8,6 +8,7 @@ import Process from './components/Process';
 import FAQ from './components/FAQ';
 import ContactCTA from './components/ContactCTA';
 import CookieConsent from './components/CookieConsent';
+import PrivacyModal from './components/PrivacyModal';
 import './index.css';
 
 class ErrorBoundary extends Component {
@@ -36,10 +37,14 @@ class ErrorBoundary extends Component {
 
 function App() {
   console.log("App component rendering...");
+  const [isPrivacyOpen, setIsPrivacyOpen] = React.useState(false);
+
+  const togglePrivacyModal = () => setIsPrivacyOpen(!isPrivacyOpen);
+
   return (
     <ErrorBoundary>
       <Suspense fallback={<div className="loading-state">Loading...</div>}>
-        <Layout>
+        <Layout onPrivacyClick={togglePrivacyModal}>
           <Hero />
           <BrandPhilosophy />
           <Services />
@@ -48,7 +53,8 @@ function App() {
           <FAQ />
           <ContactCTA />
         </Layout>
-        <CookieConsent />
+        <CookieConsent onPrivacyClick={togglePrivacyModal} />
+        <PrivacyModal isOpen={isPrivacyOpen} onClose={() => setIsPrivacyOpen(false)} />
       </Suspense>
     </ErrorBoundary>
   );

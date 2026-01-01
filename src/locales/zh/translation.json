@@ -141,6 +141,25 @@
     "cookie": {
         "title": "Cookie 和隐私政策",
         "description": "CretoWorks 使用 Cookie 以提供更好的服务。继续使用我们的网站即表示您同意我们使用 Cookie。",
-        "btnAccept": "同意并关闭"
+        "btnAccept": "同意并关闭",
+        "linkPrivacy": "隐私政策"
+    },
+    "privacy": {
+        "title": "隐私政策",
+        "sections": [
+            {
+                "title": "1. 收集目的",
+                "content": "提供服务、处理咨询以及提升用户体验。"
+            },
+            {
+                "title": "2. 收集项目",
+                "content": "咨询内容、联系方式及服务日志（Cookie）。"
+            },
+            {
+                "title": "3. 保存期限",
+                "content": "达成目的后或根据法律规定。"
+            }
+        ],
+        "btnClose": "关闭"
     }
 }

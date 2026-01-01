@@ -10,7 +10,7 @@ import translationZH from './locales/zh/translation.json';
 const resources = {
     ko: { translation: translationKO },
     en: { translation: translationEN },
-    ja: { translation: translationJA },
+    // ja: { translation: translationJA },
     zh: { translation: translationZH },
 };
 
@@ -38,7 +38,7 @@ const detectLanguageByIP = async () => {
 
         let detectedLng = 'en';
         if (countryCode === 'KR') detectedLng = 'ko';
-        else if (countryCode === 'JP') detectedLng = 'ja';
+        // else if (countryCode === 'JP') detectedLng = 'ja';
         else if (countryCode === 'CN' || countryCode === 'TW' || countryCode === 'HK') detectedLng = 'zh';
 
         // Only change if no saved preference exists

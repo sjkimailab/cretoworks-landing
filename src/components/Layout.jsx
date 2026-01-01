@@ -2,12 +2,14 @@ import React from 'react';
 import Header from './Header';
 import Footer from './Footer';
 
-const Layout = ({ children }) => {
+const Layout = ({ children, onPrivacyClick }) => {
   return (
     <div className="layout">
       <Header />
-      <main>{children}</main>
-      <Footer />
+      <main className="main-content">
+        {children}
+      </main>
+      <Footer onPrivacyClick={onPrivacyClick} />
     </div>
   );
 };

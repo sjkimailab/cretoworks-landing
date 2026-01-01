@@ -81,6 +81,24 @@
 
 .footer-column ul li a:hover {
   color: var(--color-white);
+  transform: translateX(5px);
+}
+
+.footer-link-btn {
+  background: transparent;
+  border: none;
+  font-family: inherit;
+  font-size: 0.9375rem;
+  color: var(--color-text-muted);
+  padding: 0;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: block;
+}
+
+.footer-link-btn:hover {
+  color: var(--color-white);
+  transform: translateX(5px);
 }
 
 .footer-bottom {

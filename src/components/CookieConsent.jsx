@@ -4,7 +4,7 @@ import { Cookie, X } from 'lucide-react';
 import { useTranslation } from 'react-i18next';
 import './CookieConsent.css';
 
-const CookieConsent = () => {
+const CookieConsent = ({ onPrivacyClick }) => {
     const { t } = useTranslation();
     const [isVisible, setIsVisible] = useState(false);
 
@@ -45,6 +45,9 @@ const CookieConsent = () => {
                         </div>
                         <p>{t('cookie.description')}</p>
                         <div className="cookie-actions">
+                            <button className="cookie-privacy-btn" onClick={onPrivacyClick}>
+                                {t('cookie.linkPrivacy')}
+                            </button>
                             <button className="btn btn-primary btn-sm" onClick={handleAccept}>
                                 {t('cookie.btnAccept')}
                             </button>

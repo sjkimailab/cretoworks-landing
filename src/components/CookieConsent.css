@@ -69,6 +69,22 @@
 .cookie-actions {
     display: flex;
     justify-content: flex-end;
+    gap: 16px;
+    align-items: center;
+}
+
+.cookie-privacy-btn {
+    background: transparent;
+    border: none;
+    color: var(--color-text-dim);
+    font-size: 0.8125rem;
+    text-decoration: underline;
+    cursor: pointer;
+    transition: color 0.2s ease;
+}
+
+.cookie-privacy-btn:hover {
+    color: var(--color-white);
 }
 
 @media (max-width: 500px) {
