@@ -4,13 +4,11 @@ import LanguageDetector from 'i18next-browser-languagedetector';
 
 import translationKO from './locales/ko/translation.json';
 import translationEN from './locales/en/translation.json';
-import translationJA from './locales/ja/translation.json';
 import translationZH from './locales/zh/translation.json';
 
 const resources = {
     ko: { translation: translationKO },
     en: { translation: translationEN },
-    // ja: { translation: translationJA },
     zh: { translation: translationZH },
 };
 
