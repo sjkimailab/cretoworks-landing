@@ -1,5 +1,5 @@
-import React, { useState, useEffect } from 'react';
 import './Header.css';
+import logoImg from '../assets/logo.png';
 
 const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -17,7 +17,7 @@ const Header = () => {
     <header className={`header ${isScrolled ? 'scrolled' : ''}`}>
       <div className="container header-container">
         <div className="logo">
-          CretoWorks
+          <img src={logoImg} alt="CretoWorks" />
         </div>
         <nav className="nav">
           <ul className="nav-list">

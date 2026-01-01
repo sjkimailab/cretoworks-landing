@@ -4,9 +4,9 @@ import './BrandPhilosophy.css';
 
 const BrandPhilosophy = () => {
     const features = [
-        "비즈니스 목표와 요구사항을 면밀히 분석해 맞춤형 AI 솔루션을 설계·개발합니다.",
-        "비즈니스 목표와 요구사항을 면밀히 분석해 맞춤형 AI 솔루션을 설계·개발합니다.",
-        "비즈니스 목표와 요구사항을 면밀히 분석해 맞춤형 AI 솔루션을 설계·개발합니다."
+        "비즈니스 목표를 정밀하게 분석하여 마켓의 흐름을 주도하는 맞춤형 AI 솔루션을 설계합니다.",
+        "기획부터 디자인, 개발, 배포까지 전 과정을 원스톱으로 처리하여 프로젝트의 완성도를 높입니다.",
+        "최신 트렌드와 기술적 안정성을 동시에 고려하여 지속 가능한 비즈니스 모델 구축을 지원합니다."
     ];
 
     return (
@@ -19,7 +19,8 @@ const BrandPhilosophy = () => {
                         whileInView={{ opacity: 1, x: 0 }}
                         viewport={{ once: true }}
                     >
-                        [ 한줄소개 ] AI 개발과 관련된 전과정을 책임집니다.
+                        <span className="accent-text">AI·IT Total Solution</span><br />
+                        아이디어에서 서비스 운영까지, 전 과정을 책임지는 든든한 파트너가 되어드립니다.
                     </motion.div>
 
                     <div className="features-container">

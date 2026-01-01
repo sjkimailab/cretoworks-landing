@@ -9,7 +9,7 @@ const Services = () => {
     {
       title: "헤어스타일 생성기",
       price: "월 2.9만~",
-      description: "다양한 헤어스타일을 미리 체험하고 어울리는 스타일을 찾아보세요.",
+      description: "어울리는 스타일을 미리 체험하고\n나만의 퍼스널 스타일을 찾아보세요.",
       iconClass: "icon-1",
       bgPos: "0% 0%",
       tag: "AI Store"
@@ -17,7 +17,7 @@ const Services = () => {
     {
       title: "GPT 챗봇",
       price: "월 9.9만~",
-      description: "고객 응대부터 내부 업무 보조까지, 맞춤형 AI 상담사를 구축하세요.",
+      description: "고객 응대부터 사내 업무 자동화까지,\n똑똑한 AI 파트너를 구축해 드립니다.",
       iconClass: "icon-2",
       bgPos: "100% 0%",
       tag: "AI Store"
@@ -25,7 +25,7 @@ const Services = () => {
     {
       title: "PPT 생성기",
       price: "1회 1.9만~",
-      description: "주제만 입력하면 전문적인 디자인의 PPT를 즉시 생성해 드립니다.",
+      description: "주제만 입력하면 전문적인 구성과\n감각적인 디자인의 PPT를 즉시 생성합니다.",
       iconClass: "icon-3",
       bgPos: "0% 100%",
       tag: "AI Store"
@@ -33,7 +33,7 @@ const Services = () => {
     {
       title: "이미지 생성기",
       price: "월 4.9만~",
-      description: "고품질의 커스텀 이미지를 생성하여 마케팅 자료 등에 활용하세요.",
+      description: "마케팅에 바로 활용 가능한 고품질\n커스텀 이미지를 자유롭게 생성하세요.",
       iconClass: "icon-4",
       bgPos: "100% 100%",
       tag: "AI Store"
@@ -66,7 +66,7 @@ const Services = () => {
         <div className="section-header">
           <span className="badge">Service Overview</span>
           <h2>우리만의 특별한 AI 솔루션</h2>
-          <p>자사 서비스에 맞춤 API를 접목하고 업무 생산성을 극대화하세요.</p>
+          <p>비즈니스에 최적화된 맞춤 API 접목으로<br className="desktop-only" /> 업무 생산성을 극대화하고 새로운 가치를 창출하세요.</p>
         </div>
 
         <div className="custom-dev-grid">

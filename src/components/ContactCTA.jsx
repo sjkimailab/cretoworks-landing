@@ -13,8 +13,8 @@ const ContactCTA = () => {
           transition={{ duration: 0.8 }}
           viewport={{ once: true }}
         >
-          <h2>지금 바로 AI 전환을 시작하세요</h2>
-          <p>CretoWorks와 함께라면 가능합니다. 전문가와 상담을 시작해보세요.</p>
+          <h2>새로운 비즈니스의 시작,<br className="desktop-only" /> 지금 바로 AI 전환을 경험하세요</h2>
+          <p>CretoWorks의 전문가들이 직접 성장을 고민하고<br className="desktop-only" /> 실질적인 결과로 증명해 드립니다.</p>
           <div className="cta-btns">
             <button className="btn btn-primary">문의하기</button>
             <button className="btn btn-outline">소개서 다운로드</button>

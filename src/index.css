@@ -31,11 +31,13 @@
   /* Typography */
   --font-family: "Pretendard Variable", "Pretendard", -apple-system, BlinkMacSystemFont, system-ui, sans-serif;
   --font-size-base: 16px;
-  --font-size-h1: clamp(2.5rem, 8vw, 5rem);
-  --font-size-h2: clamp(2rem, 5vw, 3.5rem);
-  --font-size-h3: clamp(1.5rem, 4vw, 2.5rem);
-  --line-height-normal: 1.6;
-  --line-height-tight: 1.1;
+  --font-size-h1: clamp(2.5rem, 8vw, 4.5rem);
+  --font-size-h2: clamp(2rem, 5vw, 3rem);
+  --font-size-h3: clamp(1.25rem, 3vw, 2rem);
+  --line-height-normal: 1.65;
+  --line-height-tight: 1.2;
+  --letter-spacing-tight: -0.03em;
+  --letter-spacing-normal: -0.01em;
 
   /* Spacing & Layout */
   --spacing-container: 1280px;
@@ -73,6 +75,9 @@ body {
   -moz-osx-font-smoothing: grayscale;
   overflow-x: hidden;
   min-height: 100vh;
+  word-break: keep-all;
+  overflow-wrap: break-word;
+  letter-spacing: var(--letter-spacing-normal);
 }
 
 /* Typography Selection */
@@ -89,7 +94,8 @@ h5,
 h6 {
   line-height: var(--line-height-tight);
   font-weight: 800;
-  letter-spacing: -0.02em;
+  letter-spacing: var(--letter-spacing-tight);
+  text-wrap: balance;
 }
 
 a {
@@ -128,6 +134,16 @@ button {
 
 .section {
   padding: var(--spacing-section) 0;
+}
+
+.desktop-only {
+  display: none;
+}
+
+@media (min-width: 1024px) {
+  .desktop-only {
+    display: inline;
+  }
 }
 
 /* Common Components */
@@ -238,7 +254,15 @@ button {
 .section-header h2 {
   color: var(--color-white);
   font-size: var(--font-size-h2);
-  margin: 1rem 0;
+  margin: 1rem 0 1.5rem;
+}
+
+.section-header p {
+  color: var(--color-text-muted);
+  font-size: 1.125rem;
+  max-width: 600px;
+  margin: 0 auto;
+  line-height: 1.6;
 }
 
 .custom-dev-card {
@@ -328,6 +352,13 @@ button {
   flex-direction: column;
   gap: 1.5rem;
   transition: all 0.3s ease;
+}
+
+.bento-card p {
+  white-space: pre-line;
+  line-height: 1.5;
+  font-size: 0.9375rem;
+  color: var(--color-text-muted);
 }
 
 .bento-card:hover {

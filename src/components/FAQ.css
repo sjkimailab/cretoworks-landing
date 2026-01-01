@@ -37,11 +37,12 @@
 }
 
 .faq-question h3 {
-    font-size: 1.125rem;
+    font-size: 1.25rem;
     font-weight: 600;
     color: var(--color-white);
     line-height: 1.4;
     margin: 0;
+    letter-spacing: -0.03em;
 }
 
 .faq-icon {
@@ -61,10 +62,12 @@
 
 .faq-answer p {
     padding-top: 1.25rem;
+    padding-bottom: 0.5rem;
     color: var(--color-text-muted);
     font-size: 1rem;
-    line-height: 1.6;
+    line-height: 1.75;
     margin: 0;
+    word-break: keep-all;
 }
 
 @media (max-width: 768px) {

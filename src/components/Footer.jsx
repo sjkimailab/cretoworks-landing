@@ -1,12 +1,14 @@
-import React from 'react';
 import './Footer.css';
+import logoImg from '../assets/logo.png';
 
 const Footer = () => {
   return (
     <footer className="footer section">
       <div className="container footer-container">
         <div className="footer-brand">
-          <div className="footer-logo">CretoWorks</div>
+          <div className="footer-logo">
+            <img src={logoImg} alt="CretoWorks" />
+          </div>
           <p className="footer-desc">
             비즈니스 맞춤형 인공지능 솔루션 파트너<br />
             AI for Everyone.
