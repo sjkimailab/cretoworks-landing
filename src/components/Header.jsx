@@ -6,7 +6,7 @@ const Header = () => {
 
   useEffect(() => {
     const handleScroll = () => {
-      setIsScrolled(window.scrollY > 50);
+      setIsScrolled(window.scrollY > 20);
     };
 
     window.addEventListener('scroll', handleScroll);
@@ -17,17 +17,20 @@ const Header = () => {
     <header className={`header ${isScrolled ? 'scrolled' : ''}`}>
       <div className="container header-container">
         <div className="logo">
-          Creto Works
+          CretoWorks
         </div>
         <nav className="nav">
           <ul className="nav-list">
-            <li><a href="#services">서비스 소개</a></li>
-            <li><a href="#cases">고객 사례</a></li>
-            <li><a href="#process">도입 절차</a></li>
+            <li><a href="#services">Service</a></li>
+            <li><a href="#ai-store">AI Store</a></li>
+            <li><a href="#custom-ai">custom ai</a></li>
+            <li><a href="#team">Team</a></li>
+            <li><a href="#blog">Blog</a></li>
+            <li><a href="#contact">Contact</a></li>
           </ul>
         </nav>
         <div className="header-actions">
-           <a href="#contact" className="btn btn-primary">문의하기</a>
+          <a href="#contact" className="btn btn-outline btn-sm">문의하기</a>
         </div>
       </div>
     </header>

@@ -2,8 +2,8 @@ import React from 'react';
 import './Partners.css';
 
 const Partners = () => {
-  const partners = ['Expedia', 'HubSpot', 'Zendesk', 'Intercom', 'Asana'];
-  
+  const partners = ['Samsung', 'LG', 'Hyundai', 'SK Telecom', 'Naver'];
+
   return (
     <div className="partners">
       <div className="container partners-container">
