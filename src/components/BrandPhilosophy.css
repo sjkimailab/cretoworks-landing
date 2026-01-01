@@ -7,7 +7,7 @@
 .philosophy-grid {
     display: flex;
     flex-direction: column;
-    gap: 3rem;
+    gap: var(--space-2xl);
 }
 
 .philosophy-label {
@@ -29,14 +29,14 @@
 .features-container {
     display: flex;
     flex-direction: column;
-    gap: 2rem;
+    gap: var(--space-md);
 }
 
 .feature-row {
     display: flex;
     align-items: flex-start;
-    gap: 2rem;
-    padding-bottom: 2rem;
+    gap: var(--space-xl);
+    padding-bottom: var(--space-lg);
     border-bottom: 1px solid rgba(255, 255, 255, 0.05);
 }
 

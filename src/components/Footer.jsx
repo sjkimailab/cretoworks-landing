@@ -15,6 +15,12 @@ const Footer = () => {
           <p className="footer-desc">
             {t('footer.desc')}
           </p>
+          <div className="footer-info">
+            <p className="company-name">{t('footer.companyName')}</p>
+            <p>{t('footer.businessNumber')}</p>
+            <p>{t('footer.address')}</p>
+            <p>{t('footer.representative')}</p>
+          </div>
         </div>
         <div className="footer-links">
           <div className="footer-column">

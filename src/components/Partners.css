@@ -1,5 +1,5 @@
 .partners {
-  padding: 60px 0;
+  padding: var(--space-2xl) 0;
   background-color: var(--color-background);
   border-bottom: 1px solid var(--color-glass-border);
 }
@@ -11,7 +11,7 @@
   text-transform: uppercase;
   letter-spacing: 0.1em;
   color: var(--color-text-muted);
-  margin-bottom: 40px;
+  margin-bottom: var(--space-xl);
 }
 
 .partners-grid {
@@ -19,7 +19,7 @@
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  gap: 60px;
+  gap: var(--space-2xl);
 }
 
 .partner-logo {

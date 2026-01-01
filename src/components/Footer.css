@@ -7,8 +7,8 @@
 .footer-container {
   display: flex;
   justify-content: space-between;
-  gap: 48px;
-  margin-bottom: 64px;
+  gap: var(--space-2xl);
+  margin-bottom: var(--space-2xl);
 }
 
 .footer-brand {
@@ -17,7 +17,7 @@
 }
 
 .footer-logo {
-  margin-bottom: 24px;
+  margin-bottom: var(--space-md);
 }
 
 .footer-logo img {
@@ -30,18 +30,37 @@
   color: var(--color-text-muted);
   line-height: 1.6;
   font-size: 1rem;
+  margin-bottom: var(--space-md);
+}
+
+.footer-info {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.footer-info p {
+  color: var(--color-text-dim);
+  font-size: 0.875rem;
+  line-height: 1.4;
+}
+
+.footer-info .company-name {
+  color: var(--color-text-muted);
+  font-weight: 600;
+  margin-bottom: 4px;
 }
 
 .footer-links {
   display: flex;
-  gap: 64px;
+  gap: var(--space-2xl);
   flex: 2;
   justify-content: flex-end;
 }
 
 .footer-column h4 {
   color: var(--color-white);
-  margin-bottom: 24px;
+  margin-bottom: var(--space-md);
   font-size: 0.875rem;
   font-weight: 700;
   text-transform: uppercase;
@@ -49,7 +68,7 @@
 }
 
 .footer-column ul li {
-  margin-bottom: 12px;
+  margin-bottom: var(--space-xs);
 }
 
 .footer-column ul li a {

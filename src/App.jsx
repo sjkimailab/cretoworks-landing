@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { Component, Suspense } from 'react';
 import Layout from './components/Layout';
 import Hero from './components/Hero';
 import Partners from './components/Partners';
@@ -38,16 +38,18 @@ function App() {
   console.log("App component rendering...");
   return (
     <ErrorBoundary>
-      <Layout>
-        <Hero />
-        <Partners />
-        <BrandPhilosophy />
-        <Services />
-        <CaseStudies />
-        <Process />
-        <FAQ />
-        <ContactCTA />
-      </Layout>
+      <Suspense fallback={<div className="loading-state">Loading...</div>}>
+        <Layout>
+          <Hero />
+          <Partners />
+          <BrandPhilosophy />
+          <Services />
+          <CaseStudies />
+          <Process />
+          <FAQ />
+          <ContactCTA />
+        </Layout>
+      </Suspense>
     </ErrorBoundary>
   );
 }
