@@ -45,7 +45,7 @@ const FAQ = () => {
                     <p>{t('faq.description')}</p>
                 </div>
                 <div className="faq-list">
-                    {faqItems.map((faq, index) => (
+                    {(Array.isArray(faqItems) ? faqItems : []).map((faq, index) => (
                         <FAQItem key={index} question={faq.question} answer={faq.answer} />
                     ))}
                 </div>

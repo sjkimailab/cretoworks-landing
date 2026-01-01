@@ -17,7 +17,7 @@ const Process = () => {
         </div>
 
         <div className="process-grid">
-          {steps.map((step, index) => (
+          {(Array.isArray(steps) ? steps : []).map((step, index) => (
             <motion.div
               key={index}
               className="process-card"

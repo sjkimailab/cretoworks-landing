@@ -1,3 +1,4 @@
+import React from 'react';
 import './Partners.css';
 import { useTranslation } from 'react-i18next';
 

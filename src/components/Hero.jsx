@@ -1,3 +1,5 @@
+import React from 'react';
+import { motion } from 'framer-motion';
 import heroVisualImg from '../assets/generated/hero_visual.png';
 import './Hero.css';
 import { useTranslation } from 'react-i18next';

@@ -2,7 +2,6 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { Code } from 'lucide-react';
 import customDevImg from '../assets/generated/custom_dev.png';
-import aiStoreIconsImg from '../assets/generated/ai_store_icons.png';
 import techPatternImg from '../assets/generated/tech_pattern.png';
 import { useTranslation } from 'react-i18next';
 
@@ -74,7 +73,7 @@ const Services = () => {
             <span className="badge">{t('services.consultancy.badge')}</span>
             <h3>{t('services.consultancy.title')}</h3>
             <div className="course-tags">
-              {t('services.consultancy.tags', { returnObjects: true }).map((tag, i) => (
+              {(t('services.consultancy.tags', { returnObjects: true }) || []).map((tag, i) => (
                 <span key={i}>{tag}</span>
               ))}
             </div>

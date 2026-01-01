@@ -16,7 +16,7 @@ const CaseStudies = () => {
         </div>
 
         <div className="cases-grid">
-          {cases.map((item, index) => (
+          {(Array.isArray(cases) ? cases : []).map((item, index) => (
             <motion.div
               key={index}
               className="case-card"

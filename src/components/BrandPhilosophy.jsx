@@ -22,7 +22,7 @@ const BrandPhilosophy = () => {
                     </motion.div>
 
                     <div className="features-container">
-                        {features.map((text, i) => (
+                        {(Array.isArray(features) ? features : []).map((text, i) => (
                             <motion.div
                                 key={i}
                                 className="feature-row"
