@@ -20,7 +20,7 @@ function App() {
 
   return (
     <ErrorBoundary>
-      <Suspense fallback={<div className="loading-state">Loading...</div>}>
+      <Suspense fallback={<div className="min-h-screen flex items-center justify-center bg-navy-950 text-white">Loading...</div>}>
         <Layout onPrivacyClick={togglePrivacyModal}>
           <Hero />
           <BrandPhilosophy />
