@@ -1,7 +1,10 @@
 import './Header.css';
 import logoImg from '../assets/logo.png';
+import LanguageSwitcher from './LanguageSwitcher';
+import { useTranslation } from 'react-i18next';
 
 const Header = () => {
+  const { t } = useTranslation();
   const [isScrolled, setIsScrolled] = useState(false);
 
   useEffect(() => {
@@ -21,16 +24,17 @@ const Header = () => {
         </div>
         <nav className="nav">
           <ul className="nav-list">
-            <li><a href="#services">Service</a></li>
-            <li><a href="#ai-store">AI Store</a></li>
-            <li><a href="#custom-ai">custom ai</a></li>
-            <li><a href="#team">Team</a></li>
-            <li><a href="#blog">Blog</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <li><a href="#services">{t('header.service')}</a></li>
+            <li><a href="#services">{t('header.aiStore')}</a></li>
+            <li><a href="#services">{t('header.customAi')}</a></li>
+            <li><a href="#team">{t('header.team')}</a></li>
+            <li><a href="#blog">{t('header.blog')}</a></li>
+            <li><a href="#contact">{t('header.contact')}</a></li>
           </ul>
         </nav>
         <div className="header-actions">
-          <a href="#contact" className="btn btn-outline btn-sm">문의하기</a>
+          <LanguageSwitcher />
+          <a href="#contact" className="btn btn-outline btn-sm">{t('header.contact')}</a>
         </div>
       </div>
     </header>

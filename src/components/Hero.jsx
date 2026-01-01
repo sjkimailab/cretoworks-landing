@@ -1,9 +1,9 @@
-import React from 'react';
-import { motion } from 'framer-motion';
 import heroVisualImg from '../assets/generated/hero_visual.png';
 import './Hero.css';
+import { useTranslation } from 'react-i18next';
 
 const Hero = () => {
+  const { t } = useTranslation();
   return (
     <section className="hero">
       <div className="container hero-container">
@@ -14,15 +14,15 @@ const Hero = () => {
           transition={{ duration: 0.8, ease: "easeOut" }}
         >
           <h1>
-            맞춤형 AI부터 웹·앱 제작,<br className="desktop-only" />
-            <span className="accent-text">교육·채용까지 CretoWorks와 한 번에</span>
+            {t('hero.title1')}<br className="desktop-only" />
+            <span className="accent-text">{t('hero.title2')}</span>
           </h1>
           <p className="hero-description">
-            단순한 솔루션 제공을 넘어, 당신의 비즈니스가 AI 시대의 리더가 될 수 있도록<br className="desktop-only" /> 최적의 기술 파트너가 되어드립니다.
+            {t('hero.description')}
           </p>
           <div className="hero-btns">
-            <button className="btn btn-primary">문의하기</button>
-            <button className="btn btn-outline">성공사례 보기</button>
+            <button className="btn btn-primary">{t('hero.btnContact')}</button>
+            <button className="btn btn-outline">{t('hero.btnCases')}</button>
           </div>
         </motion.div>
 

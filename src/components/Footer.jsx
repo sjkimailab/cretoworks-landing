@@ -1,7 +1,8 @@
-import './Footer.css';
 import logoImg from '../assets/logo.png';
+import { useTranslation } from 'react-i18next';
 
 const Footer = () => {
+  const { t } = useTranslation();
   return (
     <footer className="footer section">
       <div className="container footer-container">
@@ -10,29 +11,28 @@ const Footer = () => {
             <img src={logoImg} alt="CretoWorks" />
           </div>
           <p className="footer-desc">
-            비즈니스 맞춤형 인공지능 솔루션 파트너<br />
-            AI for Everyone.
+            {t('footer.desc')}
           </p>
         </div>
         <div className="footer-links">
           <div className="footer-column">
-            <h4>Service</h4>
+            <h4>{t('footer.service')}</h4>
             <ul>
-              <li><a href="#services">AI Store</a></li>
-              <li><a href="#custom-ai">Custom AI</a></li>
-              <li><a href="#tech-consult">Technology Consulting</a></li>
+              <li><a href="#services">{t('header.aiStore')}</a></li>
+              <li><a href="#services">{t('header.customAi')}</a></li>
+              <li><a href="#services">{t('services.consultancy.badge')}</a></li>
             </ul>
           </div>
           <div className="footer-column">
-            <h4>Company</h4>
+            <h4>{t('footer.company')}</h4>
             <ul>
-              <li><a href="#team">Team</a></li>
-              <li><a href="#blog">Blog</a></li>
-              <li><a href="#contact">Contact</a></li>
+              <li><a href="#team">{t('header.team')}</a></li>
+              <li><a href="#blog">{t('header.blog')}</a></li>
+              <li><a href="#contact">{t('header.contact')}</a></li>
             </ul>
           </div>
           <div className="footer-column">
-            <h4>Support</h4>
+            <h4>{t('footer.support')}</h4>
             <ul>
               <li><a href="#">Terms of Service</a></li>
               <li><a href="#">Privacy Policy</a></li>
@@ -41,7 +41,7 @@ const Footer = () => {
         </div>
       </div>
       <div className="footer-bottom container">
-        <p>&copy; {new Date().getFullYear()} CretoWorks. All rights reserved.</p>
+        <p>&copy; {new Date().getFullYear()} CretoWorks. {t('footer.rights')}</p>
       </div>
     </footer>
   );

@@ -1,0 +1,145 @@
+{
+    "header": {
+        "service": "Services",
+        "aiStore": "AI Store",
+        "customAi": "Custom AI",
+        "team": "Team",
+        "blog": "Blog",
+        "contact": "Contact Us"
+    },
+    "hero": {
+        "title1": "From Custom AI to Web/App Development,",
+        "title2": "Education and Recruitment with CretoWorks",
+        "description": "Beyond just providing solutions, we are your optimal technology partner to help your business lead in the AI era.",
+        "btnContact": "Contact Us",
+        "btnCases": "View Success Stories"
+    },
+    "services": {
+        "badge": "Service Overview",
+        "title": "Our Special AI Solutions",
+        "description": "Maximize productivity and create new value with custom API integration optimized for your business.",
+        "customDev": {
+            "title": "Custom Web & App Development",
+            "desc": "Contact us with your desired industry, purpose, and budget for a quick proposal.",
+            "industry": "Industry",
+            "budget": "Budget",
+            "purpose": "Purpose",
+            "industryValue": "Startup, Public/Education, Manufacturing/Logistics, Commerce/Retail, Others",
+            "budgetValue": "Under $10k ~ Over $70k",
+            "purposeValue": "Prototype, MVP, Renewal, Advanced Development",
+            "btnContact": "Contact Us"
+        },
+        "aiStore": {
+            "badge": "AI Store",
+            "title": "AI Store & Custom AI Development",
+            "items": {
+                "hair": {
+                    "title": "Hairstyle Generator",
+                    "price": "$29/mo~",
+                    "desc": "Try various hairstyles in advance and find your personal style."
+                },
+                "chat": {
+                    "title": "GPT Chatbot",
+                    "price": "$99/mo~",
+                    "desc": "From customer service to internal task automation, we build smart AI partners for you."
+                },
+                "ppt": {
+                    "title": "PPT Generator",
+                    "price": "$19/once~",
+                    "desc": "Just enter a topic and instantly generate a professional PPT with sensible design."
+                },
+                "image": {
+                    "title": "Image Generator",
+                    "price": "$49/mo~",
+                    "desc": "Freely create high-quality custom images ready for marketing use."
+                }
+            },
+            "btnDemo": "View Demo",
+            "btnContact": "Contact Us"
+        },
+        "consultancy": {
+            "badge": "Tech Consulting & Lectures",
+            "title": "AI/Web/App/SW Advisory / Custom AI Lectures",
+            "tags": [
+                "Vibe Coding",
+                "Deep Learning Basics",
+                "Vision DL",
+                "NLP/RAG"
+            ],
+            "btnMore": "View More"
+        }
+    },
+    "philosophy": {
+        "label": "AI·IT Total Solution",
+        "sublabel": "We are your reliable partner, responsible for the entire process from idea to service operation.",
+        "features": [
+            "We design custom AI solutions that lead market trends by meticulously analyzing business goals.",
+            "We increase project completeness by handling the entire process from planning to design, development, and deployment.",
+            "We support building sustainable business models by considering both latest trends and technical stability."
+        ],
+        "badge": "Features"
+    },
+    "process": {
+        "badge": "Our Process",
+        "title": "Systematic Implementation",
+        "description": "From idea to actual service operation, CretoWorks is with you.",
+        "steps": [
+            {
+                "num": "01",
+                "title": "Consulting & Requirement Analysis",
+                "desc": "We extract core values by deeply consulting on your business goals."
+            },
+            {
+                "num": "02",
+                "title": "Custom Architecture Design",
+                "desc": "We design optimal, scalable AI systems based on analyzed data."
+            },
+            {
+                "num": "03",
+                "title": "Agile Development & Validation",
+                "desc": "We increase service completeness through rapid development and rigorous quality testing."
+            },
+            {
+                "num": "04",
+                "title": "Deployment & Continuous Advancement",
+                "desc": "We advance performance by analyzing actual usage data even after stable deployment."
+            }
+        ]
+    },
+    "faq": {
+        "badge": "Q&A",
+        "title": "Frequently Asked Questions",
+        "description": "Common questions about introducing AI with CretoWorks.",
+        "items": [
+            {
+                "question": "What are the costs for AI implementation?",
+                "answer": "It depends on the complexity and model requirements. CretoWorks offers optimized plans tailored to your budget, from low-cost AI Store solutions for small businesses to enterprise-grade custom development."
+            },
+            {
+                "question": "How long does it take to build a service?",
+                "answer": "Off-the-shelf solutions from AI Store can be introduced immediately, while custom AI projects typically take 4 to 12 weeks. We provide a detailed roadmap during the initial consultation."
+            },
+            {
+                "question": "Can I use it without technical knowledge?",
+                "answer": "Absolutely. CretoWorks handles all technical processes from planning to development and actual operation. We provide close tech consulting so you can focus only on business ideas and utilization."
+            },
+            {
+                "question": "How is post-management and maintenance handled?",
+                "answer": "A dedicated team performs real-time monitoring to ensure system stability. We also promise regular model advancement and security updates in line with rapidly evolving AI technology trends."
+            }
+        ]
+    },
+    "contact": {
+        "title": "The Start of a New Business,\nExperience AI Transformation Now",
+        "description": "CretoWorks experts will personally consider your growth and prove it with practical results.",
+        "btnContact": "Contact Us",
+        "btnIntro": "Download Brochure"
+    },
+    "footer": {
+        "desc": "Business-tailored Artificial Intelligence Solution Partner\nAI for Everyone.",
+        "service": "Service",
+        "company": "Company",
+        "support": "Support",
+        "rights": "All rights reserved."
+    }
+}
