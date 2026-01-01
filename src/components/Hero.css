@@ -125,6 +125,9 @@
   height: 300px;
   top: -100px;
   right: -100px;
+  background: #f97316;
+  /* Orange from logo */
+  opacity: 0.15;
   animation: float 10s ease-in-out infinite alternate;
 }
 
@@ -133,6 +136,9 @@
   height: 200px;
   bottom: -50px;
   left: -100px;
+  background: #06b6d4;
+  /* Teal from logo */
+  opacity: 0.15;
   animation: float 8s ease-in-out infinite alternate-reverse;
 }
 
