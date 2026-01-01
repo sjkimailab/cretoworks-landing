@@ -13,7 +13,7 @@
   </defs>
   
   <!-- Hexagon -->
-  <path d="M256 10 L460 128 V384 L256 502 L52 384 V128 Z" fill="#334155" clip-path="url(#clip-left)" />
+  <path d="M256 10 L460 128 V384 L256 502 L52 384 V128 Z" fill="#475569" clip-path="url(#clip-left)" />
   <path d="M256 10 L460 128 V384 L256 502 L52 384 V128 Z" fill="url(#logo-grad)" clip-path="url(#clip-right)" />
   
   <!-- Internal Circuit Lines -->
@@ -34,5 +34,5 @@
   </g>
   
   <!-- Text -->
-  <text x="256" y="600" text-anchor="middle" font-family="Pretendard, Inter, system-ui, sans-serif" font-weight="800" font-size="94" fill="#334155">Creto Works</text>
+  <text x="256" y="600" text-anchor="middle" font-family="Pretendard, Inter, system-ui, sans-serif" font-weight="700" font-size="94" fill="#ffffff">Creto Works</text>
 </svg>

@@ -13,7 +13,7 @@
   </defs>
   
   <!-- Hexagon Icon -->
-  <path d="M256 10 L460 128 V384 L256 502 L52 384 V128 Z" fill="#334155" clip-path="url(#clip-left-icon)" />
+  <path d="M256 10 L460 128 V384 L256 502 L52 384 V128 Z" fill="#475569" clip-path="url(#clip-left-icon)" />
   <path d="M256 10 L460 128 V384 L256 502 L52 384 V128 Z" fill="url(#logo-icon-grad)" clip-path="url(#clip-right-icon)" />
   
   <g fill="none" stroke="white" stroke-width="26" stroke-linecap="round" stroke-linejoin="round">
