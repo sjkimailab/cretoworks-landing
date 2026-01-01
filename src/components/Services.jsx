@@ -9,28 +9,28 @@ const Services = () => {
       title: "헤어스타일 생성기",
       price: "월 2.9만~",
       description: "다양한 헤어스타일을 미리 체험하고 어울리는 스타일을 찾아보세요.",
-      icon: <Sparkles size={32} />,
+      iconClass: "icon-1",
       tag: "AI Store"
     },
     {
       title: "GPT 챗봇",
       price: "월 9.9만~",
       description: "고객 응대부터 내부 업무 보조까지, 맞춤형 AI 상담사를 구축하세요.",
-      icon: <MessageSquare size={32} />,
+      iconClass: "icon-2",
       tag: "AI Store"
     },
     {
       title: "PPT 생성기",
       price: "1회 1.9만~",
       description: "주제만 입력하면 전문적인 디자인의 PPT를 즉시 생성해 드립니다.",
-      icon: <Presentation size={32} />,
+      iconClass: "icon-3",
       tag: "AI Store"
     },
     {
       title: "이미지 생성기",
       price: "월 4.9만~",
       description: "고품질의 커스텀 이미지를 생성하여 마케팅 자료 등에 활용하세요.",
-      icon: <ImageIcon size={32} />,
+      iconClass: "icon-4",
       tag: "AI Store"
     }
   ];
@@ -82,7 +82,7 @@ const Services = () => {
                   </div>
                 ))}
               </div>
-              <button className="btn btn-primary">문의하기</button>
+              <button className="btn btn-primary" style={{ width: 'fit-content' }}>문의하기</button>
             </motion.div>
           ))}
         </div>
@@ -97,15 +97,15 @@ const Services = () => {
           {aiStoreItems.map((item, index) => (
             <motion.div
               key={index}
-              className={`bento-card card-${index + 1}`}
-              initial={{ opacity: 0, scale: 0.95 }}
-              whileInView={{ opacity: 1, scale: 1 }}
+              className={`bento-card`}
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
               transition={{ delay: index * 0.1 }}
               viewport={{ once: true }}
               whileHover={{ y: -5 }}
             >
               <div className="card-badge">{item.tag}</div>
-              <div className="card-icon">{item.icon}</div>
+              <div className={`image-icon ${item.iconClass}`}></div>
               <div className="card-content">
                 <h3>{item.title}</h3>
                 <span className="price">{item.price}</span>
@@ -122,7 +122,7 @@ const Services = () => {
         {/* Consultancy Section */}
         <div className="consultancy-box">
           <div className="consultancy-content">
-            <span className="badge accent">기술 컨설팅 & 강의</span>
+            <span className="badge">기술 컨설팅 & 강의</span>
             <h3>AI·웹·앱·SW 자문 / 맞춤 AI 강의</h3>
             <div className="course-tags">
               <span>바이브코딩</span>

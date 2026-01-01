@@ -6,6 +6,7 @@ import BrandPhilosophy from './components/BrandPhilosophy';
 import Services from './components/Services';
 import CaseStudies from './components/CaseStudies';
 import Process from './components/Process';
+import FAQ from './components/FAQ';
 import ContactCTA from './components/ContactCTA';
 import './index.css';
 
@@ -18,6 +19,7 @@ function App() {
       <Services />
       <CaseStudies />
       <Process />
+      <FAQ />
       <ContactCTA />
     </Layout>
   );

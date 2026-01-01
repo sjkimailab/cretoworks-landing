@@ -43,22 +43,41 @@
 }
 
 .custom-dev-card {
-  background: var(--grad-surface);
+  background: var(--color-navy-900);
   border-radius: var(--border-radius-lg);
-  padding: 3rem;
   border: 1px solid var(--color-glass-border);
+  padding: 4rem;
   display: flex;
   flex-direction: column;
-  gap: 2.5rem;
+  gap: 3rem;
+  position: relative;
+  overflow: hidden;
+  box-shadow: var(--shadow-premium);
 }
 
-.card-top {
+.custom-dev-card::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 40%;
+  height: 100%;
+  background: linear-gradient(to right, var(--color-navy-900), transparent), url('./assets/custom_dev.png');
+  background-size: cover;
+  background-position: center;
+  opacity: 0.3;
+  pointer-events: none;
+}
+
+.custom-dev-card .card-top {
   display: flex;
-  align-items: center;
   gap: 2rem;
+  align-items: center;
+  position: relative;
+  z-index: 2;
 }
 
-.icon-box {
+.custom-dev-card .icon-box {
   width: 80px;
   height: 80px;
   background: var(--grad-primary);
@@ -67,19 +86,23 @@
   align-items: center;
   justify-content: center;
   color: white;
-  flex-shrink: 0;
 }
 
-.text-box h3 {
-  color: white;
+.custom-dev-card .text-box h3 {
   font-size: 2rem;
   margin-bottom: 0.5rem;
+}
+
+.custom-dev-card .text-box p {
+  font-size: 1.125rem;
 }
 
 .options-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 2rem;
+  position: relative;
+  z-index: 2;
 }
 
 .option-item {
@@ -89,13 +112,16 @@
 }
 
 .option-item .label {
-  color: var(--color-text-muted);
   font-size: 0.875rem;
-  font-weight: 600;
+  color: var(--color-accent);
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
 }
 
 .option-item .value {
-  color: white;
+  font-size: 1rem;
+  color: var(--color-text-main);
   font-weight: 500;
 }
 
@@ -109,42 +135,65 @@
 }
 
 .bento-card {
-  background: var(--color-navy-light);
+  background: var(--color-navy-900);
+  border: 1px solid var(--color-glass-border);
   border-radius: var(--border-radius-md);
   padding: 2rem;
-  border: 1px solid var(--color-glass-border);
+  position: relative;
   display: flex;
   flex-direction: column;
-  transition: all 0.3s ease;
-  position: relative;
-  overflow: hidden;
+  gap: 1.5rem;
 }
 
 .card-badge {
-  position: absolute;
-  top: 1.5rem;
-  right: 1.5rem;
   font-size: 0.75rem;
-  color: var(--color-text-muted);
-  font-weight: 600;
-}
-
-.card-icon {
-  color: var(--color-accent);
-  margin-bottom: 1.5rem;
-}
-
-.card-content h3 {
-  color: white;
-  margin-bottom: 0.5rem;
-}
-
-.price {
-  display: block;
-  font-size: 1.25rem;
   font-weight: 700;
   color: var(--color-accent);
-  margin-bottom: 1rem;
+  background: rgba(37, 99, 235, 0.1);
+  padding: 0.25rem 0.75rem;
+  border-radius: 4px;
+  width: fit-content;
+}
+
+.image-icon {
+  width: 100%;
+  aspect-ratio: 16/10;
+  background-image: url('./assets/ai_store_icons.png');
+  background-size: 200%;
+  border-radius: 12px;
+  border: 1px solid var(--color-glass-border);
+}
+
+.icon-1 {
+  background-position: 0% 0%;
+}
+
+.icon-2 {
+  background-position: 100% 0%;
+}
+
+.icon-3 {
+  background-position: 0% 100%;
+}
+
+.icon-4 {
+  background-position: 100% 100%;
+}
+
+.bento-card h3 {
+  font-size: 1.25rem;
+  margin: 0;
+}
+
+.bento-card .price {
+  font-size: 0.875rem;
+  color: var(--color-accent);
+  font-weight: 700;
+}
+
+.bento-card p {
+  font-size: 0.9375rem;
+  margin: 0;
 }
 
 .card-footer {
@@ -157,22 +206,23 @@
 .btn-text {
   background: none;
   border: none;
-  color: var(--color-text-muted);
-  font-weight: 600;
+  color: var(--color-text-dim);
   font-size: 0.875rem;
-  cursor: pointer;
-  transition: color 0.2s;
+  font-weight: 600;
+  padding: 0;
+  transition: color 0.2s ease;
 }
 
 .btn-text:hover {
-  color: var(--color-accent);
+  color: var(--color-white);
 }
 
 /* Consultancy Box */
 .consultancy-box {
+  margin-top: 4rem;
   background: linear-gradient(90deg, rgba(168, 85, 247, 0.1) 0%, rgba(37, 99, 235, 0.1) 100%);
   border-radius: var(--border-radius-md);
-  padding: 2.5rem;
+  padding: 3rem 4rem;
   border: 1px solid rgba(255, 255, 255, 0.05);
   display: flex;
   align-items: center;
@@ -181,14 +231,14 @@
 
 .course-tags {
   display: flex;
-  gap: 1rem;
-  margin-top: 1rem;
+  gap: 0.75rem;
+  margin-top: 1.5rem;
 }
 
 .course-tags span {
-  padding: 0.25rem 0.75rem;
+  padding: 0.5rem 1rem;
   background: rgba(255, 255, 255, 0.05);
-  border-radius: 4px;
+  border-radius: 100px;
   font-size: 0.875rem;
   color: var(--color-text-muted);
 }
