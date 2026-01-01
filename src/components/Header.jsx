@@ -1,21 +1,13 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import './Header.css';
 import logoImg from '../assets/logo.svg';
 import LanguageSwitcher from './LanguageSwitcher';
 import { useTranslation } from 'react-i18next';
+import useScroll from '../hooks/useScroll';
 
 const Header = () => {
   const { t } = useTranslation();
-  const [isScrolled, setIsScrolled] = useState(false);
-
-  useEffect(() => {
-    const handleScroll = () => {
-      setIsScrolled(window.scrollY > 20);
-    };
-
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
-  }, []);
+  const isScrolled = useScroll(20);
 
   return (
     <header className={`header ${isScrolled ? 'scrolled' : ''}`}>
