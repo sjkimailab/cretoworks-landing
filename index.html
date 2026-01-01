@@ -12,6 +12,17 @@
   <link rel="stylesheet"
     href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" />
   <title>CretoWorks | Future-Ready Solutions</title>
+  <script>
+    // GitHub Pages SPA redirect solution
+    // Restore the path from 404.html redirect
+    (function () {
+      var redirect = sessionStorage.redirect;
+      delete sessionStorage.redirect;
+      if (redirect && redirect !== location.href) {
+        history.replaceState(null, null, redirect);
+      }
+    })();
+  </script>
   <script type="module" crossorigin src="/cretoworks-landing/assets/index-CUgqDmXX.js"></script>
   <link rel="stylesheet" crossorigin href="/cretoworks-landing/assets/index-D8zpUpkN.css">
 </head>
