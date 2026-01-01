@@ -126,10 +126,17 @@
         "title": "새로운 비즈니스의 시작,\n지금 바로 AI 전환을 경험하세요",
         "description": "CretoWorks의 전문가들이 직접 성장을 고민하고\n실질적인 결과로 증명해 드립니다.",
         "btnContact": "문의하기",
-        "btnIntro": "소개서 다운로드",
-        "successTitle": "문의가 접수되었습니다!",
-        "successDesc": "소중한 문의 감사합니다. 담당자가 확인 후 빠른 시일 내에 연락드리겠습니다.",
-        "btnBack": "홈으로 돌아가기"
+        "btnBack": "홈으로 돌아가기",
+        "labelName": "성함",
+        "labelEmail": "이메일",
+        "labelSubject": "제목",
+        "labelMessage": "문의내용",
+        "placeholderName": "홍길동",
+        "placeholderEmail": "example@email.com",
+        "placeholderSubject": "프로젝트 문의",
+        "placeholderMessage": "무엇을 도와드릴까요?",
+        "btnSend": "메시지 보내기",
+        "sending": "전송 중..."
     },
     "footer": {
         "desc": "비즈니스 맞춤형 인공지능 솔루션 파트너\nAI for Everyone.",

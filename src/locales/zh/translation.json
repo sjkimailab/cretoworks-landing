@@ -122,10 +122,21 @@
         ]
     },
     "contact": {
+        "badge": "业务咨询",
         "title": "新业务的开始，\n现在就体验 AI 转型",
         "description": "CretoWorks 的专家将亲自为成长烦恼，\n用实际成果证明。",
         "btnContact": "联系我们",
-        "btnIntro": "下载介绍资料"
+        "btnBack": "返回首页",
+        "labelName": "姓名",
+        "labelEmail": "邮箱",
+        "labelSubject": "主题",
+        "labelMessage": "咨询内容",
+        "placeholderName": "张三",
+        "placeholderEmail": "zhang@example.com",
+        "placeholderSubject": "项目咨询",
+        "placeholderMessage": "我们能帮您什么？",
+        "btnSend": "发送信息",
+        "sending": "正在发送..."
     },
     "footer": {
         "desc": "业务定制化人工智能解决方案合作伙伴\nAI for Everyone.",

@@ -120,7 +120,7 @@ const Contact = () => {
                         <form onSubmit={handleSubmit} className="space-y-6">
                             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                                 <div className="space-y-2">
-                                    <label className="text-sm font-medium text-text-muted ml-1">Name</label>
+                                    <label className="text-sm font-medium text-text-muted ml-1">{t('contact.labelName')}</label>
                                     <input
                                         type="text"
                                         name="name"
@@ -128,11 +128,11 @@ const Contact = () => {
                                         value={formState.name}
                                         onChange={handleChange}
                                         className="w-full bg-white/5 border border-white/10 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-primary transition-colors hover:border-white/20"
-                                        placeholder="Steve Jobs"
+                                        placeholder={t('contact.placeholderName')}
                                     />
                                 </div>
                                 <div className="space-y-2">
-                                    <label className="text-sm font-medium text-text-muted ml-1">Email</label>
+                                    <label className="text-sm font-medium text-text-muted ml-1">{t('contact.labelEmail')}</label>
                                     <input
                                         type="email"
                                         name="email"
@@ -140,13 +140,13 @@ const Contact = () => {
                                         value={formState.email}
                                         onChange={handleChange}
                                         className="w-full bg-white/5 border border-white/10 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-primary transition-colors hover:border-white/20"
-                                        placeholder="steve@apple.com"
+                                        placeholder={t('contact.placeholderEmail')}
                                     />
                                 </div>
                             </div>
 
                             <div className="space-y-2">
-                                <label className="text-sm font-medium text-text-muted ml-1">Subject</label>
+                                <label className="text-sm font-medium text-text-muted ml-1">{t('contact.labelSubject')}</label>
                                 <input
                                     type="text"
                                     name="subject"
@@ -154,12 +154,12 @@ const Contact = () => {
                                     value={formState.subject}
                                     onChange={handleChange}
                                     className="w-full bg-white/5 border border-white/10 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-primary transition-colors hover:border-white/20"
-                                    placeholder="Project Inquiry"
+                                    placeholder={t('contact.placeholderSubject')}
                                 />
                             </div>
 
                             <div className="space-y-2">
-                                <label className="text-sm font-medium text-text-muted ml-1">Message</label>
+                                <label className="text-sm font-medium text-text-muted ml-1">{t('contact.labelMessage')}</label>
                                 <textarea
                                     name="message"
                                     required
@@ -167,7 +167,7 @@ const Contact = () => {
                                     value={formState.message}
                                     onChange={handleChange}
                                     className="w-full bg-white/5 border border-white/10 rounded-lg px-4 py-4 text-white focus:outline-none focus:border-primary transition-colors hover:border-white/20 resize-none"
-                                    placeholder="How can we help you?"
+                                    placeholder={t('contact.placeholderMessage')}
                                 ></textarea>
                             </div>
 
@@ -176,7 +176,7 @@ const Contact = () => {
                                 disabled={isSubmitting}
                                 className="btn btn-primary w-full py-4 text-lg flex items-center justify-center gap-3 transition-transform active:scale-[0.98]"
                             >
-                                {isSubmitting ? 'Sending...' : 'Send Message'}
+                                {isSubmitting ? t('contact.sending') : t('contact.btnSend')}
                                 {!isSubmitting && <Send size={20} />}
                             </button>
                         </form>

@@ -126,10 +126,17 @@
         "title": "The Start of a New Business,\nExperience AI Transformation Now",
         "description": "CretoWorks experts will personally consider your growth and prove it with practical results.",
         "btnContact": "Contact Us",
-        "btnIntro": "Download Brochure",
-        "successTitle": "Message Received!",
-        "successDesc": "Thank you for your inquiry. Our team will get back to you as soon as possible.",
-        "btnBack": "Back to Home"
+        "btnBack": "Back to Home",
+        "labelName": "Name",
+        "labelEmail": "Email",
+        "labelSubject": "Subject",
+        "labelMessage": "Message",
+        "placeholderName": "John Doe",
+        "placeholderEmail": "john@example.com",
+        "placeholderSubject": "Project Inquiry",
+        "placeholderMessage": "How can we help you?",
+        "btnSend": "Send Message",
+        "sending": "Sending..."
     },
     "footer": {
         "desc": "Business-tailored Artificial Intelligence Solution Partner\nAI for Everyone.",
