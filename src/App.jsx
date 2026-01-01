@@ -1,7 +1,6 @@
 import React, { Component, Suspense } from 'react';
 import Layout from './components/Layout';
 import Hero from './components/Hero';
-import Partners from './components/Partners';
 import BrandPhilosophy from './components/BrandPhilosophy';
 import Services from './components/Services';
 import CaseStudies from './components/CaseStudies';
@@ -41,7 +40,6 @@ function App() {
       <Suspense fallback={<div className="loading-state">Loading...</div>}>
         <Layout>
           <Hero />
-          <Partners />
           <BrandPhilosophy />
           <Services />
           <CaseStudies />
