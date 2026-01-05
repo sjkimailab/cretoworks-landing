@@ -7,6 +7,13 @@
     border-radius: 100px;
     border: 1px solid var(--color-glass-border);
     color: var(--color-text-dim);
+    cursor: pointer;
+    overflow: hidden;
+    /* Ensure content doesn't spill during animation */
+}
+
+.globe-icon {
+    flex-shrink: 0;
 }
 
 .lang-options {

@@ -1,4 +1,5 @@
 import React, { Component, Suspense } from 'react';
+import { Routes, Route } from 'react-router-dom';
 import Layout from './components/Layout';
 import Hero from './components/Hero';
 import BrandPhilosophy from './components/BrandPhilosophy';
@@ -10,6 +11,13 @@ import ContactCTA from './components/ContactCTA';
 import CookieConsent from './components/CookieConsent';
 import PrivacyModal from './components/PrivacyModal';
 import './index.css';
+
+// Admin imports
+import AdminLogin from './pages/admin/Login';
+import Dashboard from './pages/admin/Dashboard';
+import Inquiries from './pages/admin/Inquiries';
+import AdminLayout from './components/admin/AdminLayout';
+import ProtectedRoute from './components/admin/ProtectedRoute';
 
 class ErrorBoundary extends Component {
   constructor(props) {
@@ -35,26 +43,49 @@ class ErrorBoundary extends Component {
   }
 }
 
+// Landing Page Component to keep App clean
+const LandingPage = () => {
+  const [isPrivacyOpen, setIsPrivacyOpen] = React.useState(false);
+  const togglePrivacyModal = () => setIsPrivacyOpen(!isPrivacyOpen);
+
+  return (
+    <>
+      <Layout onPrivacyClick={togglePrivacyModal}>
+        <Hero />
+        <BrandPhilosophy />
+        <Services />
+        <CaseStudies />
+        <Process />
+        <FAQ />
+        <ContactCTA />
+      </Layout>
+      <CookieConsent onPrivacyClick={togglePrivacyModal} />
+      <PrivacyModal isOpen={isPrivacyOpen} onClose={() => setIsPrivacyOpen(false)} />
+    </>
+  );
+};
+
 function App() {
   console.log("App component rendering...");
-  const [isPrivacyOpen, setIsPrivacyOpen] = React.useState(false);
-
-  const togglePrivacyModal = () => setIsPrivacyOpen(!isPrivacyOpen);
 
   return (
     <ErrorBoundary>
       <Suspense fallback={<div className="loading-state">Loading...</div>}>
-        <Layout onPrivacyClick={togglePrivacyModal}>
-          <Hero />
-          <BrandPhilosophy />
-          <Services />
-          <CaseStudies />
-          <Process />
-          <FAQ />
-          <ContactCTA />
-        </Layout>
-        <CookieConsent onPrivacyClick={togglePrivacyModal} />
-        <PrivacyModal isOpen={isPrivacyOpen} onClose={() => setIsPrivacyOpen(false)} />
+        <Routes>
+          {/* Public Landing Page */}
+          <Route path="/" element={<LandingPage />} />
+
+          {/* Admin Routes */}
+          <Route path="/admin" element={<AdminLogin />} />
+          <Route path="/admin/*" element={
+            <ProtectedRoute>
+              <AdminLayout />
+            </ProtectedRoute>
+          }>
+            <Route path="dashboard" element={<Dashboard />} />
+            <Route path="inquiries" element={<Inquiries />} />
+          </Route>
+        </Routes>
       </Suspense>
     </ErrorBoundary>
   );
